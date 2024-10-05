@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora de Área do Trapézio"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editTextBaseMaior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Base maior"
+        android:inputType="number"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextBaseMenor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Base menor"
+        android:inputType="number"
+        android:layout_below="@id/editTextBaseMaior"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Altura"
+        android:inputType="number"
+        android:layout_below="@id/editTextBaseMenor"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_below="@id/editTextAltura"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/buttonCalcular"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
